@@ -1,13 +1,12 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    color: #fff;
+    color: #000000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color:black;
+    background-color:rgb(197, 184, 184);
 }
 
 header {
@@ -62,11 +61,42 @@ header nav ul li a {
 
 .hero-blurb {
     color: yellow;
-    font-size: xx-large;
+    font-size: 4em;
     text-align: center;
     padding:250px 60px;
     margin: auto;
     width: 60%;
 }
 
+h2 {
+    font-size: 3em;
+}
 
+/*about me section*/
+.about-me {
+    display: flex;
+    flex-flow: row wrap;
+    height: 250px;
+    gap: 60px;
+    margin: 50px;
+     
+}
+
+.about-me aside {
+    padding-right: 30px;
+    margin: 20px;
+    border-right: .3em solid black;
+}
+
+.about-me div {
+    margin-top: 20px;
+    flex: 60%;
+    font-size: 2em;
+}
+
+/*work section*/
+.work {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+}
