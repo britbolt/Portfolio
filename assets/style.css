@@ -6,7 +6,7 @@
 
 body {
     color: #fff;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color:black;
 }
 
@@ -28,7 +28,8 @@ header a {
 }
 
 /*styles for navigation*/
-/*large screen*/
+
+/*large screens*/
 .navigation {
     display: flex;
     flex-flow: row wrap;
@@ -48,5 +49,24 @@ header nav ul li a {
     text-decoration: none;
     padding: 1em;
     color:#fff;
-
 }
+
+/*hero banner*/
+.hero {
+    background-image: url("images/bubbles.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-blurb {
+    color: yellow;
+    font-size: xx-large;
+    text-align: center;
+    padding:250px 60px;
+    margin: auto;
+    width: 60%;
+}
+
+
