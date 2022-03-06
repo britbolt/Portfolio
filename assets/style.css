@@ -37,7 +37,7 @@
 }
 
 body {
-    color: #00ABCC;
+    color: #112D4E;
     font-family:'montserrat';
     background-color: #F9F7F7;
 }
@@ -48,20 +48,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #27496D;
+    background-color: #3F72AF;
     margin: 0;
+    text-decoration: none;
 }
 
 header h1 {
     font-weight:lighter;
-    color:#fff;
+    color:#F9F7F7;
 }
 
-header a {
-    text-decoration: none;
-    color: #fff;
-    
-}
 
 /*styles for navigation*/
 
@@ -91,20 +87,21 @@ header nav ul li a {
 
 /*hero banner*/
 .hero {
-    background-image: url("images/bubbles.jpg");
+    background: url("images/bubbles.jpg") no-repeat center;
     height: 600px;
+    width: 100% 100%;
     background-size: cover;
-    background-position: center;
     position: relative;
 }
 
 .hero-blurb {
-    color: #142850;
+    position: absolute;
+    color: #F9F7F7;
     font-size: 4em;
     text-align: center;
-    padding:250px 60px;
-    margin: auto;
-    width: 60%;
+    padding:150px 30px;
+    width: 100vw;
+    text-shadow: 2px 4px 7px #112D4E;
 }
 
 h2 {
@@ -155,7 +152,7 @@ h2 {
     display: flex;
     flex-flow: row wrap;
     justify-content:space-evenly;
-    flex: 60%;
+    flex: 1 1 60%;
     margin-left: 50px;
     margin-top: 20px;
     gap: 0px;
@@ -163,6 +160,7 @@ h2 {
 
 .run-buddy {
     position: relative;
+    flex 1 1 50%;
 }
 
 .run-buddy p {
