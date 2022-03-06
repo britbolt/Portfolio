@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -83,13 +84,16 @@ h2 {
 }
 
 .about-me aside {
-    padding-right: 30px;
+    flex: 20%;
+    padding: 0px 20px;
     margin: 20px;
+    text-align: right;
     border-right: .3em solid black;
 }
 
 .about-me div {
     margin-top: 20px;
+    margin-left: 20px;
     flex: 60%;
     font-size: 2em;
 }
@@ -99,4 +103,103 @@ h2 {
     display: flex;
     flex-flow: row wrap;
     margin-top: 50px;
+}
+
+.work aside {
+    flex: 20%;
+    padding: 0px 20px;
+    margin: 20px;
+    text-align: right;
+    border-right: .3em solid black;
+}
+
+.work div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    flex: 60%;
+    margin-left: 50px;
+    margin-top: 20px;
+    gap: 0px;
+}
+
+.run-buddy {
+    position: relative;
+}
+
+.run-buddy p {
+    position: absolute;
+    bottom:30px;
+    left: 10px;
+    font-size:1.5em;
+    border: 3px solid black;
+    background-color: #fff;
+    padding: 3px;
+}
+
+ .run-buddy img {
+    height: auto;
+    width: 95%;
+    padding: 10px;
+}
+
+.run-buddy img:hover {
+    opacity: 60%;
+}
+
+.calculator {
+    position: relative;
+    width: 45%;
+}
+
+.calculator p {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+    font-size: 1.5em;
+    border: 3px solid black;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.calculator img {
+    height: 330px;
+    width: 350px; 
+    object-fit: cover;
+    padding: 30px;  
+}
+
+.calculator img:hover {
+    opacity: 60%;
+}
+
+.password {
+    position: relative;
+    width: 45%
+}
+
+.password p {
+    position: absolute;
+    bottom: 45px;
+    left: 29.5px;
+    font-size: 1.5em;
+    border: 3px solid black;
+    background-color: #fff;
+    padding: 3px;
+}
+.password img {
+    padding: 30px;
+    height: 330px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.password img:hover {
+    opacity: 60%;
+}
+
+footer {
+    width: 100%;
+    background: rgb(21, 168, 173);
+    text-align: right;
 }
