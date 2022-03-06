@@ -4,27 +4,63 @@
     box-sizing: border-box;
 }
 
+/* #1 Regular Weight */
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../assets/fonts/montserrat/Montserrat-Regular.otf");
+}
+
+/* #2 Italic Style */
+@font-face {
+	font-family: "Montserrat";
+	font-style: italic;
+	font-weight: normal;
+	src: url("../assets/fonts/montserrat/Monserrat-Italic.otf");
+}
+
+/* #3 Bold Weight */
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: bold;
+	src: url("../assets/fonts/montserrat/Montserrat-Bold.otf");
+}
+
+/* #4 Bold Italic Style */
+@font-face {
+	font-family: "Montserrat";
+	font-style: italic;
+	font-weight: bold;
+	src: url("../assets/fonts/montserrat/Montserrat-BoldItalic");
+}
+
 body {
-    color: #000000;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color:rgb(197, 184, 184);
+    color: #00ABCC;
+    font-family:'montserrat';
+    background-color: #F9F7F7;
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
-    background-color:darkblue;
+    align-items: center;
+    padding: 10px;
+    background-color: #27496D;
+    margin: 0;
 }
 
 header h1 {
+    font-weight:lighter;
     color:#fff;
 }
 
 header a {
     text-decoration: none;
     color: #fff;
+    
 }
 
 /*styles for navigation*/
@@ -38,15 +74,17 @@ header a {
     margin: 0;
 }
 /*small screens*/
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
     .navigation {
-        justify-content: column;
+        display: flex;
+        flex-flow: column wrap;
     }
 }
 
 header nav ul li a {
     display: block;
     text-decoration: none;
+    font-size: 1.55vw;
     padding: 1em;
     color:#fff;
 }
@@ -61,7 +99,7 @@ header nav ul li a {
 }
 
 .hero-blurb {
-    color: yellow;
+    color: #142850;
     font-size: 4em;
     text-align: center;
     padding:250px 60px;
@@ -199,7 +237,27 @@ h2 {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
+    color: #142850;
     background: rgb(21, 168, 173);
-    text-align: right;
+    align-items: center;
+    font-size: 1.55vw;
+}
+
+.contact-info ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.contact-info ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.55vw;
+    padding: 1em;
+    color:#142850;
 }
