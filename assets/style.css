@@ -36,15 +36,19 @@
 	src: url("../assets/fonts/montserrat/Montserrat-BoldItalic");
 }
 
-body {
+html, body {
     color: #112D4E;
     font-family:'montserrat';
     background-color: #F9F7F7;
+    height: 100%;
+    width:100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -85,7 +89,7 @@ header nav ul li a {
     color:#fff;
 }
 
-/*hero banner*/
+/*hero banner - large screen*/
 .hero {
     background: url("images/bubbles.jpg") no-repeat center;
     height: 600px;
@@ -93,15 +97,34 @@ header nav ul li a {
     background-size: cover;
     position: relative;
 }
+/*small screens*/
+@media screen and (max-width: 800px) {
+    .hero {
+        height: 300px;
+        width: 100% 100%;
+        background-size: cover;
+        position: relative;
+    }   
+}
 
 .hero-blurb {
     position: absolute;
     color: #F9F7F7;
     font-size: 4em;
     text-align: center;
-    padding:150px 30px;
+    padding: 250px 50px;
     width: 100vw;
     text-shadow: 2px 4px 7px #112D4E;
+}
+
+@media screen and (max-width:800px) {
+    .hero-blurb {
+        position: absolute;
+        font-size: 2em;
+        margin: 5%;
+        width: 90%;
+        padding:50px;
+    }
 }
 
 h2 {
@@ -158,9 +181,63 @@ h2 {
     gap: 0px;
 }
 
+/*small screen*/
+@media screen and (max-width: 900px) {
+    .work aside {
+		 padding: 0px 5px;
+        margin: 5px;
+        border: none;
+		font-size: .5em;
+		text-align: center;
+        text-decoration: underline;
+    }
+    .about-me aside {
+        padding: 0px;
+        margin: 1%;
+        border: none;
+		text-align: center;
+		font-size: .5em;
+        text-decoration: underline;
+		
+    }
+	.about-me div {		
+		margin-top: 2%;
+		margin-left:0px;
+		padding: 10%;
+		font-size: 1.5em
+		
+	}
+	.work div {
+		margin-top: 2%;
+		margin-left:0px;
+		padding: 10%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+		display: flex;
+		flex-flow: column wrap;
+		gap: 5em;
+    }
+    .about-me {
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 0em;
+		
+            
+	    }  
+	.work {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+    
+}
+
+
 .run-buddy {
     position: relative;
-    flex 1 1 50%;
+    flex: 1 1 90%;
 }
 
 .run-buddy p {
@@ -185,7 +262,7 @@ h2 {
 
 .calculator {
     position: relative;
-    width: 45%;
+    width: 1 1 45%;
 }
 
 .calculator p {
@@ -211,7 +288,7 @@ h2 {
 
 .password {
     position: relative;
-    width: 45%
+    width: 1 1 45%
 }
 
 .password p {
