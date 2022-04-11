@@ -260,12 +260,12 @@ h2 {
     opacity: 60%;
 }
 
-.calculator {
+.tap {
     position: relative;
     width: 1 1 45%;
 }
 
-.calculator p {
+.tap p {
     position: absolute;
     bottom: 45px;
     left: 30px;
@@ -275,14 +275,14 @@ h2 {
     padding: 3px;
 }
 
-.calculator img {
+.tap img {
     height: 330px;
     width: 350px; 
     object-fit: cover;
     padding: 30px;  
 }
 
-.calculator img:hover {
+.tap img:hover {
     opacity: 60%;
 }
 
